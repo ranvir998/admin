@@ -63,7 +63,7 @@ jobs:
         run: poetry run permasigner -u https://github.com/Odyssey-Team/Taurine/releases/download/1.1.6/Taurine-1.1.6.ipa -d
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v7
         with:
           name: Taurine-1.1.6-${{ matrix.os }}-p${{ matrix.python-version }}.deb
           path: output/**
