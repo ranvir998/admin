@@ -46,7 +46,7 @@ jobs:
           poetry publish -u __token__ -p ${{ secrets.PYPI_TOKEN }}
           
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v7
         with:
           name: Permasigner
           path: dist/**
